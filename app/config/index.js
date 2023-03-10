@@ -1,6 +1,8 @@
 import app from "../app.js";
 import message from "./message.js";
 
+
+// establezco entornos
  export const caseEntorno = () => {
 
     switch(process.env.NODE_ENV){
