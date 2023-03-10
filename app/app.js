@@ -1,13 +1,13 @@
 //
 import  Express  from "express";
 import  message  from "./config/message.js";
+import enviroment from "./config/enviroment";
 
 const app = Express();
 
 
-app.listen(3000,()=>{
+app.set("PORT",process.env.PORT || 3001);
 
-    message("HI WORLD", "danger");
-    /* console.log(``); */
 
-});
+
+export default app;

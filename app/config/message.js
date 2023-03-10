@@ -1,9 +1,9 @@
 //
 import color from "colors";
 
-const message = (mensaje, tipo)=>{
+export const message = (mensaje, tipo)=>{
 
-switch (tipo) {
+  switch (tipo) {
 
         case "danger":
         console.log(mensaje.bgRed);
