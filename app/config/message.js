@@ -1,5 +1,7 @@
 import color from "colors";
 
+
+// metodo que contiene dos parametros
 const message =(mensaje,tipo)=>{
     switch(tipo){
         case "danger":
