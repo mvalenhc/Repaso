@@ -10,5 +10,6 @@ route.get("/",(req, res)=>{
 
 route.get("/user", controller.findAllUser);
 route.get("/user/:id", controller.findUser);
+route.post("/user/", controller.insertUser);
 
 export default route;
