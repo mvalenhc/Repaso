@@ -5,10 +5,14 @@ import message from "./config/message.js";
 // importo el paquete colors
 
 import enviroments from "./config/enviroments";
+import allRoutes  from "./routes/user.routes";
 
 const app = express();
 // variable app-funcion app
 app.set("PORT",process.env.PORT || 3000);
+
+app.use("/api",allRoutes);
+
 
 // app.listen(app.get("PORT"),()=>{
 //     // console.log("hola mundo");
