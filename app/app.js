@@ -10,7 +10,7 @@ import allRoutes  from "./routes/user.routes";
 const app = express();
 // variable app-funcion app
 app.set("PORT",process.env.PORT || 3000);
-
+app.use(express.json());
 app.use("/api",allRoutes);
 
 

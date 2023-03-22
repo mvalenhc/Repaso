@@ -21,8 +21,10 @@ export const findUser =async(req,res)=>{
     }
 
 }
-export const insertUser =(req,res)=>{
-
+export const insertUser = async(req,res)=>{
+     const name = req.body.name;
+     const result = await pool.query(`CALL spInsertUser(${name});`);
+     res.json(result);
 }
 export const deleteUser =(req,res)=>{
 
